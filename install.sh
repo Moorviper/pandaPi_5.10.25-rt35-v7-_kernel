@@ -27,4 +27,4 @@ cp boot/zImage.img /boot/kernel7.img
 echo "\033[1m \033[34m copying Image->kernel8 to boot folder ... \033[0m"
 cp boot/Image.img /boot/kernel8.img
 
-echo -e "\033[1m \033[42m - - - - D O N E - - - -  \033[0m"
+echo "\033[1m \033[42m - - - - D O N E - - - -  \033[0m"
