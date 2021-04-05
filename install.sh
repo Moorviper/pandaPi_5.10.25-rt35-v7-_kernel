@@ -11,7 +11,7 @@ mv /boot/*.dtb /boot/bakup/dtb/
 echo "\033[1m \033[34m move kernel ... \033[0m"
 mv /boot/*.img /boot/bakup/kernel/
 echo "\033[1m \033[34m move overlays ... \033[0m"
-mv /boot/overlays /boot/bakup/
+cp -r /boot/overlays /boot/bakup/ && rm -R /boot/overlays
 
 echo "\033[1m \033[31m copying new files ... \033[0m"
 
