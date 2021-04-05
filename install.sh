@@ -1,17 +1,17 @@
 #!/bin/#!/bin/sh
 
 echo "\033[1m \033[32m creating backup ... \033[0m"
-if ! [ -d "/boot/bakup"] ; then
-	mkdir -p /boot/bakup/kernel
-	mkdir -p /boot/bakup/dtb
+if ! [ -d "/boot/backup"] ; then
+	mkdir -p /boot/backup/kernel
+	mkdir -p /boot/backup/dtb
 fi
 
 echo "\033[1m \033[34m move dtb ... \033[0m"
-mv /boot/*.dtb /boot/bakup/dtb/
+mv /boot/*.dtb /boot/backup/dtb/
 echo "\033[1m \033[34m move kernel ... \033[0m"
-mv /boot/*.img /boot/bakup/kernel/
+mv /boot/*.img /boot/backup/kernel/
 echo "\033[1m \033[34m move overlays ... \033[0m"
-cp -r /boot/overlays /boot/bakup/ && rm -R /boot/overlays
+cp -r /boot/overlays /boot/backup/ && rm -R /boot/overlays
 
 echo "\033[1m \033[31m copying new files ... \033[0m"
 
