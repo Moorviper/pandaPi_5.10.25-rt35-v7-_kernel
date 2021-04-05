@@ -20,8 +20,8 @@ cp boot/dts/bcm*.dtb /boot/
 echo -e "\033[1m \033[34m copying dtb to boot folder ... \033[0m"
 cp boot/dts/overlays /boot/
 echo -e "\033[1m \033[34m copying dtb to boot folder ... \033[0m"
-cp boot/zImage /boot/kernel7.img
+cp boot/zImage.img /boot/kernel7.img
 echo -e "\033[1m \033[34m copying dtb to boot folder ... \033[0m"
-cp boot/Image /boot/kernel8.img
+cp boot/Image.img /boot/kernel8.img
 
 echo -e "\033[1m \033[47m - - - - D O N E - - - -  \033[0m"
