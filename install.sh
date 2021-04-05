@@ -1,7 +1,10 @@
 #!/bin/#!/bin/sh
 
 echo "\033[1m \033[32m creating backup ... \033[0m"
-if ! [ -d "/boot/backup"] ; then
+if [ -d "/boot/backup"]
+then
+	echo "/boot/backup is there ..."
+else
 	mkdir -p /boot/backup/kernel
 	mkdir -p /boot/backup/dtb
 fi
