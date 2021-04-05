@@ -18,7 +18,7 @@ echo -e "\033[1m \033[31m copying new files ... \033[0m"
 echo -e "\033[1m \033[34m copying dtb to boot folder ... \033[0m"
 cp boot/dts/bcm*.dtb /boot/
 echo -e "\033[1m \033[34m copying dtb to boot folder ... \033[0m"
-cp boot/dts/overlays /boot/
+cp -r boot/dts/overlays /boot/
 echo -e "\033[1m \033[34m copying dtb to boot folder ... \033[0m"
 cp boot/zImage.img /boot/kernel7.img
 echo -e "\033[1m \033[34m copying dtb to boot folder ... \033[0m"
