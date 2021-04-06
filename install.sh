@@ -1,4 +1,4 @@
-#!/bin/#!/bin/sh
+#!/bin/sh
 
 echo "\033[1m \033[32m creating backup ... \033[0m"
 if [ -d "/boot/backup"]
